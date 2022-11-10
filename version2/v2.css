@@ -1,0 +1,87 @@
+/* Antonio Carlos Moruno Gómez */
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body{
+	width:1260px;
+	height:500px;
+	margin:45px auto 0px;
+	background:#66BFE9;
+}
+
+/*main{
+	width:1260px;
+	height:500px;
+	background:#A3E851;
+}*/
+
+main{/*Se adapta al contenido*/
+	display:flow-root;
+	background-color:#A3E851;
+}
+
+body div#containerizq, body div#containerder{
+	float:left;
+}
+
+body div#containerizq{ /* El ancho total va a ser 800px */
+	width:780px; /*Se le suma 20px de padding, 10 a cada lado*/
+	height:370px; /* El alto total va a ser 400px, se le suman 30px del padding*/
+	padding:30px 10px 0px;
+	background:#5E6DF1;
+	margin-right:20px;
+	margin-left:20px;
+}
+
+body div#containerder{
+	width:340px; /* El ancho total va a ser 400px*/
+	height:350px; /* El alto total va a ser 400px, se le suman 50px del padding */
+	padding:50px 30px 0px;
+	background:#A24437;
+	margin-right:20px;
+}
+
+div form#formulario{
+	margin-top:4em; /* Se separa del texto superior el valor de la letra del contenedor *4 */
+	padding:1em 0px 1em 70px; /* Los elementos de dentro se separa lo indicado del borde de su contenedor */
+	background:#D39546;
+}
+
+form#formulario label, form#formulario input{
+	display:block; /* Se alinean verticalmente */
+}
+
+form#formulario input[type="text"], form#formulario input[type="email"]{
+	width: 490px; /*porque hay 10 de padding*/
+	padding-left:10px; /* El texto que se comience a escribir estará 10px separado del margen izq */
+}
+
+form#formulario input[type="submit"]{
+	width:150px;
+	height:2em;
+	background:#D8D8D8;
+}
+
+div#containerder div#imagen{
+	width:150px;
+}
+
+div#imagen img#cara{
+	width:100%;
+}
+
+footer{
+	height:100px;
+	width:1260px;
+	background:#E4CA62;
+	clear:left; /* Es la solución óptima, rompemos el flotamiento */
+}
+

@@ -1,0 +1,94 @@
+/* Antonio Carlos Moruno Gómez */
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+html{
+	/*width:1260px;*/
+	background-color:#fffffff;
+}
+
+body{
+	/*width:100%;*/
+	width:1260px;
+	/*height:500px;*/
+	margin:45px auto 0px;
+	background:#66BFE9;
+	height:93vh;
+}
+
+/*main{
+	width:1260px;
+	height:500px;
+	background:#A3E851;
+}*/
+
+main{/*Se adapta al contenido*/
+	display:flow-root;
+	background-color:#A3E851;
+}
+
+body div#containerizq, body div#containerder{
+	float:left;
+}
+
+body div#containerizq{ 
+	width:61.9047619%; /* 780px y contenedor 1260px */
+	height:68.82vh; /* El alto total va a ser 400px, se le suman 30px del padding, que son 74vh(370px) */
+	padding:5.58vh 0.793650794% 0%;
+	background:#5E6DF1;
+	margin-right:1.58730159%; /* 20px y contenedor 1260px */
+	margin-left:1.58730159%;
+}
+
+body div#containerder{
+	width:26.984127%; 
+	height:65.1vh; /* El alto total va a ser 400px, se le suman 50px del padding, 70vh(350px) */
+	padding:9.3vh 2.38095238% 0%;
+	background:#A24437;
+	margin-right:1.58730159%;
+}
+
+div form#formulario{
+	margin-top:4em; /* Se separa del texto superior el valor de la letra del contenedor *4 */
+	padding:1em 0px 1em 8.97435898%; /* Los elementos de dentro se separan lo indicado del borde de su contenedor */
+	background:#D39546;
+}
+
+form#formulario label, form#formulario input{
+	display:block; /* Se alinean verticalmente */
+}
+
+form#formulario input[type="text"], form#formulario input[type="email"]{
+	width: 69.2090395480226%; /* El contenedor es 710 (780-70 de padding) */
+	padding-left:1.4124293785%;
+}
+
+form#formulario input[type="submit"]{
+	width:21.1267605633%; /* Se coge el container que son 710px */
+	height:2em;
+	background:#D8D8D8;
+}
+
+div#containerder div#imagen{
+	width:44.117647058%; /* Se coge el contenedor que son 340px */ 
+}
+
+div#imagen img#cara{
+	width:100%;
+}
+
+footer{
+	height:18.6vh; /* Son 100px */
+	width:100%;
+	background:#E4CA62;
+	clear:left; /* Es la solución óptima, rompemos el flotamiento */
+}
+
